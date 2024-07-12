@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=#$(id -u)
+USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
@@ -43,25 +43,3 @@ do
         VALIDATE $? "Installation of $i"
     fi
 done
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-dnf install mysql -y &>>$LOGFILE
-VALIDATE $? "Installing MySQL"
-
-dnf install git -y &>>$LOGFILE
-VALIDATE $? "Installing Git"
-
-dnf install docker -y &>>$LOGFILE
-VALIDATE $? "Installing Docker"
