@@ -12,13 +12,13 @@ N="\e[0m"
 echo "Script started executing at:$TIMESTAMP"
 
 VALIDATE(){
-if [ $1 -ne 0 ]
-then 
-   echo -e "$2...$R FAITURE $N"
-   exit 1
-else
-   echo -e "$2.. $G SUCCESS $N"
-fi
+    if [ $1 -ne 0 ]
+    then 
+        echo -e "$2...$R FAITURE $N"
+        exit 1
+    else
+        echo -e "$2.. $G SUCCESS $N"
+    fi
 }
 
 # if [ $USERID -ne 0 ]
@@ -36,8 +36,6 @@ then
 else
     echo "You are super user."
 fi
-
-
 
 dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL"
