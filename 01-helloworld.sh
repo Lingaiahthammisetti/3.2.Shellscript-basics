@@ -1,1 +1,3 @@
-Thi is a Sample file.
+#!/bin/bash
+
+echo "Hello! I am learning Devops"
