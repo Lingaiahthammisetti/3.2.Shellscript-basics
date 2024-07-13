@@ -1,11 +1,12 @@
 #!/bin/bash
 
+
+SOURCE_DIRECTORY=/tmp/app-logs
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-
-SOURCE_DIRECTORY=/tmp/app-logs
 
 if [ -d $SOURCE_DIRECTORY ]
 then 
@@ -16,7 +17,7 @@ else
       exit 1
 fi
 
-FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +2")
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +2)
 
 while IFS= read -r line
 do
