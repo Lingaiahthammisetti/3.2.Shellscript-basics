@@ -15,8 +15,7 @@ else
    echo -e "$R Please make sure $SOURCE_DIRECTORY exists $N"
 fi
 
-
-FILES=$(find $SOURCE_DIRECTORY -name "*.log -mtime +14")
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +2")
 
 while IFS= read -r line
 do
