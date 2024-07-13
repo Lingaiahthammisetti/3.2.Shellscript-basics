@@ -17,7 +17,7 @@ else
 
 fi
 
-dnf install myfallql -y
+dnf install mysql -y
 dnf install git -y
 
 echo "is script proceeding?"
