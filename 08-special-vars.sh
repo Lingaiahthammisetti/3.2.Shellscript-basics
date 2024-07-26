@@ -1,7 +1,4 @@
 
-
-
-
 #!/bin/bash
 echo "All variables fo $@"
 echo "All variables fo $*"
