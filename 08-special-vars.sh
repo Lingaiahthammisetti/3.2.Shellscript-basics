@@ -1,7 +1,6 @@
 
 #!/bin/bash
-echo "All variables for AT Symbol             :$@"
-echo "All variables for Astertic Symbol       :$*"
+
 
 echo "Total Number of parameters passed       :$#"
 echo "Name of Script file                     :$0"
@@ -21,6 +20,8 @@ echo "Home directory of current user          :$HOME"
 echo "Which user is running this script       :$USER"
 echo "Hostname                                :$HOSTNAME"
 
+echo "All variables for AT Symbol             :$@"
+echo "All variables for Astertic Symbol       :$*"
 
 # echo "All variables fo $@"
 # echo "Number of variables  passed: $#"
