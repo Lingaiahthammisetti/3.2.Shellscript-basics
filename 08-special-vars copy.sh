@@ -16,11 +16,10 @@ echo "Exit Status of previous command:   $?"
 ls -l &>>error_file.txt
 echo "Exit Status of previous command:   $?"
 
-
 echo "Current Working Directory:          $PWD"
 echo "Home directory of current user:     $HOME"
 echo "Which user is running this script:  $USER"
-echo "Hostname:                          $HOSTNAME"
+echo "Hostname:                           $HOSTNAME"
 
 
 # echo "All variables fo $@"
