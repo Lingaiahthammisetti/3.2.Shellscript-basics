@@ -4,7 +4,7 @@ echo "All variables for AT Symbol             :$@"
 echo "All variables for Astertic Symbol       :$*"
 
 echo "Total Number of parameters passed       :$#"
-echo "Name of Script file: $0"
+echo "Name of Script file                     :$0"
 echo "Process ID of the current shell script  :$$"
 sleep 60 &
 echo "Process ID of last background command   :$!"
