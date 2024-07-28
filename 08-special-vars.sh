@@ -1,7 +1,6 @@
 
 #!/bin/bash
 
-
 echo "Total Number of parameters passed       :$#"
 echo "Name of Script file                     :$0"
 echo "Process ID of the current shell script  :$$"
@@ -22,6 +21,10 @@ echo "Hostname                                :$HOSTNAME"
 
 echo "All variables for AT Symbol             :$@"
 echo "All variables for Astertic Symbol       :$*"
+#The "$*" special parameter takes the entire list as one argument with spaces between.
+#The "$@" special parameter takes the entire list and separates it into separate arguments.
+
+
 
 # echo "All variables fo $@"
 # echo "Number of variables  passed: $#"
