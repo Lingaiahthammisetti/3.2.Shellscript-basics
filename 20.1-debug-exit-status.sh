@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # Command to run
-dnf install ansible -y
-
-# Check the exit status
+dnf remove ansible -y
 if [ $? -eq 0 ]; then
     echo "Command executed successfully"
 else
