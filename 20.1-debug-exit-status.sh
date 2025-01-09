@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Command to run
-dnf remove ansible -y
+dnf install ansibleee -y
 if [ $? -eq 0 ]; then
     echo "Command executed successfully"
 else
