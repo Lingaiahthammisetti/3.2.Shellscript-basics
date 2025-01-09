@@ -21,10 +21,10 @@ echo "Hostname                                :$HOSTNAME"
 
 echo "All variables for AT Symbol             :$@"
 echo "All variables for Astertic Symbol       :$*"
+
+
 #The "$*" special parameter takes the entire list as one argument with spaces between.
 #The "$@" special parameter takes the entire list and separates it into separate arguments.
-
-
 
 # echo "All variables fo $@"
 # echo "Number of variables  passed: $#"
