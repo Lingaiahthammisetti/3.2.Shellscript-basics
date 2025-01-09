@@ -10,4 +10,4 @@ handle_error() {
 trap handle_error ERR
 
 echo "This is a test script."
-some_command  # If this fails, handle_error will be called
+dnf install ansibleee -y # If this fails, handle_error will be called
