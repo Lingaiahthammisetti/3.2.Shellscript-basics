@@ -23,17 +23,17 @@ else
    echo "you are super user."
 fi
 
-# dnf install mysql -y &>>$LOGFILE
-# VALIDATE $? "Installing MYSQL"
+dnf install mysql -y &>>$LOGFILE
+VALIDATE $? "Installing MYSQL"
 
-# dnf install git -y &>>$LOGFILE
-# VALIDATE $? "Installing Git"
+dnf install git -y &>>$LOGFILE
+VALIDATE $? "Installing Git"
 
-dnf remove mysql -y &>>$LOGFILE
-VALIDATE $? "Uninstalling MYSQL"
+# dnf remove mysql -y &>>$LOGFILE
+# VALIDATE $? "Uninstalling MYSQL"
 
-dnf remove git -y &>>$LOGFILE
-VALIDATE $? "Uninstalling Git"
+# dnf remove git -y &>>$LOGFILE
+# VALIDATE $? "Uninstalling Git"
 
 
 
