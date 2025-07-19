@@ -29,10 +29,10 @@ fi
 # dnf install git -y &>>$LOGFILE
 # VALIDATE $? "Installing Git"
 
-dnf uninstall mysql -y &>>$LOGFILE
+dnf remove mysql -y &>>$LOGFILE
 VALIDATE $? "Uninstalling MYSQL"
 
-dnf uninstall git -y &>>$LOGFILE
+dnf remove git -y &>>$LOGFILE
 VALIDATE $? "Uninstalling Git"
 
 
