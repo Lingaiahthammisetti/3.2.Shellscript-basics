@@ -18,7 +18,7 @@ else
 
 fi
 
-dnf install mysdsql -y
 dnf install git -y
+dnf install mysdsql -y
 
 echo "is script proceeding?"
