@@ -43,3 +43,7 @@ do
         VALIDATE $? "Installation of $i"
     fi
 done
+
+
+# How to run command:
+# sh 14-install-packages.sh vim nano wget curl net-tools bash-completion htop tree tar
